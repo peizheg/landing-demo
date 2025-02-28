@@ -1,8 +1,8 @@
 const Header = () => {
 
     return (
-        <header className="m-3">
-            <nav className="flex py-2.5 px-8 bg-black/10 rounded-lg justify-between">
+        <header className="m-3 py-2.5 bg-black/10 rounded-lg">
+            <nav className="flex justify-between max-w-[90rem] mx-auto px-12">
                 <div>
                     <a href="/">
                         <img  className="h-6.5" src="/main-camelai.webp" alt="camelAI logo"/>
