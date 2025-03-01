@@ -35,7 +35,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-24">
           <div className="bg-white/10 text-white px-2.5 py-2 rounded-xl flex items-center backdrop-blur-sm">
             <SiYcombinator className="text-orange-500 mr-2" />
             <p className='font-light'>Y Combinator backed</p>
@@ -50,7 +50,10 @@ export default function Hero() {
           </div>
         </div>
 
-        
+    </div>
+
+    <div className='w-auto h-100 mb-20 bg-white mx-80'>
+
     </div>
     </>
 
