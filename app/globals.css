@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans); */
+  --font-mono: 'Roboto Mono', 'Courier New', 'Inconsolata', 'Source Code Pro', 'Menlo', 'Consolas', monospace;
 }
 
 :root {
@@ -14,6 +14,16 @@
   :root {
     --background: #ededed;
   }
+}
+
+.long-dashes {
+  background-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 8px, transparent 8px, transparent 16px),
+                    repeating-linear-gradient(to right, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 8px, transparent 8px, transparent 16px),
+                    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 8px, transparent 8px, transparent 16px),
+                    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 8px, transparent 8px, transparent 16px);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+  background-repeat: no-repeat;
 }
 
 body {
