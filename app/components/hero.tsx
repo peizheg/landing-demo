@@ -9,12 +9,12 @@ export default function Hero() {
             className="absolute top-0 w-full h-13/10 -z-1"
             style={{ background: 'linear-gradient(to top right, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F)' }}>
         </div>
-        <div className="absolute top-0 w-full h-13/10 bg-[#0000008e] backdrop-blur-[150px] -z-1"></div>
+        <div className="absolute 0 w-full h-13/10 bg-[#0000008e] backdrop-blur-[150px] -z-1"></div>
 
 
         {/* The hero content */}
-        <div>
-            <div className="text-center mt-10 mb-14">
+        <div className='pt-24'>
+            <div className="text-center mb-14">
                 <h1 className="text-white text-6xl font-bold mb-10">The AI Data Analyst</h1>
                 <p className="text-white text-[25px] max-w-3xl mx-auto">
                     Ask questions, get instant charts and insights from your data.
@@ -52,9 +52,9 @@ export default function Hero() {
 
     </div>
 
-    <div className='w-auto h-100 mb-20 bg-white mx-80'>
+      <div className='w-auto h-100 mb-20 bg-white mx-80'>
 
-    </div>
+      </div>
     </>
 
   );

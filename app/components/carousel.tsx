@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react"
+import _ from "lodash"
 import Marquee from "react-fast-marquee"
-import Image from "next/image"
 
 // Logo data with name and image path
 const logos = [
@@ -27,7 +26,7 @@ const logos = [
 ]
 
 
-export default function LogoMarquee() {
+const Carousel = () => {
   return (
     <div className="w-full bg-[#0C0F12] py-30">
       <div className="max-w-7xl mx-auto">
@@ -48,7 +47,7 @@ export default function LogoMarquee() {
 
       <div className="max-w-7xl mx-auto -mt-1">
         <Marquee speed={8} pauseOnHover={true} gradient={true} gradientColor="#0C0F12" direction="right" className="h-30">
-          {(logos.slice(9).concat(logos.slice(0, 9))).map((logo, index) => (
+          {(_.shuffle(logos)).map((logo, index) => (
             <div
               className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
             >
@@ -65,3 +64,4 @@ export default function LogoMarquee() {
   )
 }
 
+export default Carousel
