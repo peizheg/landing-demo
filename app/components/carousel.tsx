@@ -38,6 +38,7 @@ const Carousel = () => {
             {logos.map(logo => (
               <div
                 className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
+                key={logo.name}
               >
                 <div
                   className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"
@@ -52,6 +53,7 @@ const Carousel = () => {
             {(_.shuffle(logos)).map(logo => (
               <div
                 className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
+                key={logo.name}
               >
                 <div
                   className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"

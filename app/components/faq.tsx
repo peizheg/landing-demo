@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const FAQ: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -16,7 +17,7 @@ const FAQ: React.FC = () => {
             <div className='max-w-240 mx-auto w-full'>
                 <button onClick={() => toggleQuestion(0)} className='py-4 sm:py-6 flex w-full justify-between'>
                     <p className='text-lg sm:text-xl font-medium'>How is my data stored?</p>
-                    <img
+                    <Image
                         src="/arrow_up.webp"
                         alt="Expand"
                         className='h-4 sm:h-5 mt-[0.5px] duration-350'
@@ -32,7 +33,7 @@ const FAQ: React.FC = () => {
 
                 <button onClick={() => toggleQuestion(1)} className='py-4 sm:py-6 flex w-full justify-between'>
                     <p className='text-lg sm:text-xl font-medium'>Do you train on my data?</p>
-                    <img
+                    <Image
                         src="/arrow_up.webp"
                         alt="Expand"
                         className='h-4 sm:h-5 mt-[0.5px] duration-350'
@@ -48,7 +49,7 @@ const FAQ: React.FC = () => {
 
                 <button onClick={() => toggleQuestion(2)} className='py-4 sm:py-6 flex w-full justify-between'>
                     <p className='text-lg sm:text-xl font-medium'>Are my app connections secure?</p>
-                    <img
+                    <Image
                         src="/arrow_up.webp"
                         alt="Expand"
                         className='h-4 sm:h-5 mt-[0.5px] duration-350'
@@ -64,7 +65,7 @@ const FAQ: React.FC = () => {
 
                 <button onClick={() => toggleQuestion(3)} className='py-4 sm:py-6 flex w-full justify-between'>
                     <p className='text-lg sm:text-xl font-medium'>How do you pull my data?</p>
-                    <img
+                    <Image
                         src="/arrow_up.webp"
                         alt="Expand"
                         className='h-4 sm:h-5 mt-[0.5px] duration-350'
