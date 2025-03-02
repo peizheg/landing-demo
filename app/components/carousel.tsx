@@ -8,7 +8,7 @@ const logos = [
   { name: "Postgres", src: "/postgres.png" },
   { name: "DuckDB", src: "/duckdb.png" },
   { name: "Peliqan", src: "/peliqan.png" },
-  { name: "LinkedIn", src: "/linkedin.png" },
+  { name: "LinkedIn", src: "/linkedin-2.png" },
   { name: "Airtable", src: "/airtable.png" },
   { name: "Snowflake", src: "/snowflake.png" },
   { name: "DynamoDB", src: "/dynamodb.png" },
@@ -28,38 +28,41 @@ const logos = [
 
 const Carousel = () => {
   return (
-    <div className="w-full bg-[#0C0F12] py-30">
-      <div className="max-w-7xl mx-auto">
-        <Marquee speed={8} pauseOnHover={true} gradient={true} gradientColor="#0C0F12" direction="left" className="h-30">
-          {logos.map((logo, index) => (
-            <div
-              className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
-            >
-              <div
-                className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"
-              >
-                <img src={logo.src} alt={`${logo.name} logo`} className="object-contain" />
-            </div>
-          </div>
-          ))}
-        </Marquee>
-      </div>
+    <div className="w-full bg-[#0d1014] py-15">
+      <div className="relative py-15 max-w-7xl mx-auto">
+        <div className="absolute top-0 bg-[url(/background.png)] bg-contain w-full h-full"></div>
+        <div className="absolute top-0 bg-gradient-to-b from-transparent from-70% to-[#0d1014] w-full h-full"></div>
+        <div className="absolute top-0 bg-[#0d101440] bg-contain w-full h-full"></div>
 
-      <div className="max-w-7xl mx-auto -mt-1">
-        <Marquee speed={8} pauseOnHover={true} gradient={true} gradientColor="#0C0F12" direction="right" className="h-30">
-          {(_.shuffle(logos)).map((logo, index) => (
-            <div
-              className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
-            >
+          <Marquee speed={8} pauseOnHover={true} gradient={true} gradientColor="#0d1014" direction="left" className="h-30">
+            {logos.map(logo => (
               <div
-                className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"
+                className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
               >
-                <img src={logo.src} alt={`${logo.name} logo`} className="object-contain" />
+                <div
+                  className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"
+                >
+                  <img src={logo.src} alt={`${logo.name} logo`} className="object-contain" />
+              </div>
             </div>
-          </div>
-          ))}
-        </Marquee>
+            ))}
+          </Marquee>
+
+          <Marquee speed={8} pauseOnHover={true} gradient={true} gradientColor="#0d1014" direction="right" className="h-30 -mt-1">
+            {(_.shuffle(logos)).map(logo => (
+              <div
+                className="mx-2 relative cursor-pointer transition-all duration-300 ease-in-out"
+              >
+                <div
+                  className="w-24 h-24 relative transition-all duration-300 ease-in-out hover:scale-110 brightness-50 hover:brightness-100 hover:filter"
+                >
+                  <img src={logo.src} alt={`${logo.name} logo`} className="object-contain" />
+              </div>
+            </div>
+            ))}
+          </Marquee>
       </div>
+      
     </div>
   )
 }

@@ -1,6 +1,6 @@
 const Features = () => {
     return (
-        <div className="bg-[#0C0F12] pb-40 flex flex-col items-center justify-center">
+        <div className="bg-[#0d1014] pb-40 flex flex-col items-center justify-center">
 
             {/* First demo */}
 
@@ -39,9 +39,9 @@ const Features = () => {
 
                     <h2 className="text-3xl font-mono mb-8">Want to build with camelAI?</h2>
                     <h2 className="text-2xl text-white/80 mb-8">Embed AI-powered analytics directly in your application with our API</h2>
-                    <button className="bg-white text-lg text-black px-4 py-2.5 rounded-2xl font-bold">
+                    <button className="bg-white text-black text-lg px-4 py-3 w-48 h-11 rounded-[20px] flex items-center justify-between font-bold hover:-translate-y-0.5 hover:duration-500 hover:ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-gradient-to-r from-[#58f1ff63] via-[#5f83f04f] to-[#e54bdb49]">
                         Join API Waitlist
-                        <img src="/arrow_right.webp" className="h-3.5 inline-block ml-2 -mt-1" />
+                        <img className="h-3.5" src='/arrow_right.webp' alt="arrow right" />
                     </button>
                 </div>
                 <div className="w-1/2">

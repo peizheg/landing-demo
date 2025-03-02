@@ -10,7 +10,6 @@
   /* --font-sans: var(--font-geist-sans); */
   --font-mono: 'Roboto Mono', 'Courier New', 'Inconsolata', 'Source Code Pro', 'Menlo', 'Consolas', monospace;
   --animate-ping: ping 2s cubic-bezier(0, 0.95, 0.98, 1) infinite
-  --animate-wiggle: ping_2 2s cubic-bezier(0, 0.95, 0.98, 1) infinite
 }
 
 :root {
@@ -32,6 +31,10 @@
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
   background-repeat: no-repeat;
+}
+
+button, a {
+  cursor: pointer
 }
 
 body {

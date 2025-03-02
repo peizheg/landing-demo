@@ -22,17 +22,16 @@ export default function Hero() {
             </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">
-          <a className="bg-white text-gray-800 text-lg font-semibold px-6 py-3 w-44 h-11 rounded-[20px] flex items-center justify-between font-medium hover:-translate-y-0.5 hover:duration-500 hover:ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-gradient-to-r from-[#58f1ff63] via-[#5f83f04f] to-[#e54bdb49]">
+          <button className="bg-white text-black text-lg font-bold px-6 py-3 w-44 h-11 rounded-[20px] flex items-center justify-between hover:-translate-y-0.5 hover:duration-500 hover:ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-gradient-to-r from-[#58f1ff63] via-[#5f83f04f] to-[#e54bdb49]">
             Try free
             <img className="h-3.5" src='/arrow_right.webp' alt="arrow right" />
-          </a>
-          <a 
-            href="/book-demo" 
-            className="bg-transparent text-lg font-semibold border-2 border-[#ffffff68] text-white px-5 py-3 w-44 h-11 rounded-[20px] flex items-center justify-between font-medium hover:bg-white/10 transition duration-300"
+          </button>
+          <button 
+            className="bg-transparent text-lg font-bold border-2 border-[#ffffff68] text-white px-5 py-3 w-44 h-11 rounded-[20px] flex items-center justify-between hover:bg-white/10 transition duration-300"
           >
             Book demo
-            <img className="fill-white h-3.5" src='/arrow_right.webp' alt="arrow right" />
-          </a>
+            <img className="fill-white h-3.5" src='/arrow_white.png' alt="arrow right" />
+          </button>
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-24">

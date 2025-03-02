@@ -10,8 +10,8 @@ const FAQ: React.FC = () => {
     };
 
     return (
-        <div className="bg-[#0C0F12] pb-40 flex flex-col items-center justify-center">
-            <h2 className='text-3xl font-bold mb-12'>FAQs</h2>
+        <div className="bg-gradient-to-b from-[#0C0F12] to-black pb-20 flex flex-col items-center justify-center">
+            <h2 className='text-3xl font-bold mb-8'>FAQs</h2>
 
             <div className='max-w-240 mx-12 w-full'>
                 <button onClick={() => toggleQuestion(0)} className='py-6 flex w-full justify-between'>
