@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <header className="m-3 mx-3 py-2.5 w-[calc(100vw-24px)] bg-black/10 rounded-lg fixed backdrop-blur-[6px] z-5">
-            <nav className="flex justify-between max-w-[90rem] mx-auto px-12">
+            <nav className="flex justify-between max-w-[90rem] mx-auto px-6 md:px-12">
                 <div>
                     <a>
                         <img className="h-6.5" src="/main-camelai.webp" alt="camelAI logo"/>
