@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@keyframes ping_2 {
+  from {scale: 110;}
+  to {scale: 140; top:100}
+}
+
+
 @theme {
   /* --font-sans: var(--font-geist-sans); */
   --font-mono: 'Roboto Mono', 'Courier New', 'Inconsolata', 'Source Code Pro', 'Menlo', 'Consolas', monospace;
+  --animate-ping: ping 2s cubic-bezier(0, 0.95, 0.98, 1) infinite
+  --animate-wiggle: ping_2 2s cubic-bezier(0, 0.95, 0.98, 1) infinite
 }
 
 :root {

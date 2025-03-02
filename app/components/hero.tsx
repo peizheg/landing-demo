@@ -6,10 +6,10 @@ export default function Hero() {
     <>
         {/* The blur background */}
         <div 
-            className="absolute top-0 w-full h-13/10 -z-1"
+            className="absolute top-0 w-full h-1/4 -z-1"
             style={{ background: 'linear-gradient(to top right, #58F1FF, #5F83F0, #E54BDA, #FF8D29, #F83A31, #35012F)' }}>
         </div>
-        <div className="absolute 0 w-full h-13/10 bg-[#0000008e] backdrop-blur-[150px] -z-1"></div>
+        <div className="absolute 0 w-full h-1/4 bg-[#0000008e] backdrop-blur-[150px] -z-1"></div>
 
 
         {/* The hero content */}
@@ -52,9 +52,46 @@ export default function Hero() {
 
     </div>
 
-      <div className='w-auto h-100 mb-20 bg-white mx-80'>
+    <div className="flex justify-center items-center">
+            <div className="relative max-h-[120vh] overflow-hidden my-16 mx-16 max-w-[980px]">
+                {/* Anchor wrapping the entire video container with group class */}
+                <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block relative w-full h-full group"
+                >
+                    {/* Background Video with rounded corners */}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        className="w-full h-full object-cover z-0 rounded-[15px]"
+                    >
+                        <source src="/camelai-video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
 
-      </div>
+                    {/* Play Button */}
+                    <div className="absolute inset-0 flex items-center justify-center z-10 ">
+                        <div className="relative inline-flex items-center justify-center rounded-full text-white transition-all duration-500 group-hover:scale-120">
+                            {/* First ring */}
+                            <span className="absolute inset-0 bg-white rounded-full opacity-85 group-hover:animate-ping transform scale-78"></span>
+                            {/* Second ring */}
+                            <span className="absolute inset-0 bg-white rounded-full opacity-85 group-hover:animate-ping transform scale-71"></span>
+                            {/* Colored ring */}
+                            <span className="absolute inset-0 transform scale-115 rounded-[50%] opacity-0 bg-linear-[45deg,#58F1FF,#5F83F0,#E54BDA,#FF8D29] transition-opacity group-hover:opacity-100 group-hover:animate-wiggle"></span>
+                            {/* Play icon image */}
+                            <img
+                                src="/play-icon.png"
+                                alt="Play"
+                                className="h-[100px] w-[100px] relative z-2 group-hover:brightness-200 rounded-[50%] group-hover:shadow-[0px_0px_25px_4px_#FFFFFFA0]"
+                            />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </>
 
   );
